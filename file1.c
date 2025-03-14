@@ -16,7 +16,7 @@ int main(){
     printf("ingresa el valor de la corriente (I): ");
     scanf("%f", &intensidad);
 
-    if (intensidad <= 0 || voltaje <= 0) {
+    if (intensidad <= 0) {
         return printf("La resistencia es infinita");
     }
     resistencia = voltaje / intensidad;

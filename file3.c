@@ -3,13 +3,30 @@
 //
 
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    float number;
-    int finalNumber;
-    printf("dame un número real ");
+    float number, resto;
+    int x;
+
+    printf("Ingresa el numero con decimales: ");
     scanf("%f", &number);
-    finalNumber = round(number);
-    printf("el número real | %.4f | en el tipo entero es | %d | ", number, finalNumber);
+
+    x = (int)number;
+    resto = number - x;
+
+    if (number < 0) {
+        if (resto <= -0.5) {
+            printf("el numero %.2f redondeado seria: %d\n", number, x - 1);
+        } else {
+            printf("el numero %.2f no se puede redondear y queda %d\n", number, x);
+        }
+    } else {
+        if (resto >= 0.5) {
+            printf("el numero %.2f redondeado seria: %d\n", number, x + 1);
+        } else {
+            printf("el numero %.2f no se puede redondear y queda %d\n", number, x);
+        }
+    }
+
+    return 0;
 }
