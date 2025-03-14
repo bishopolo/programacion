@@ -11,7 +11,7 @@ int main() {
     printf("Ingresa el numero con decimales: ");
     scanf("%f", &number);
 
-    x = (int)number;
+    x = number;
     resto = number - x;
 
     if (number < 0) {
