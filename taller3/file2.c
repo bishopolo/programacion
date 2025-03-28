@@ -17,15 +17,25 @@ int main(){
     tmp = number;
 
     printf("128\t64\t32\t16\t8\t4\t2\t1\n");
-    for (int i = 1; i <= 8; i++) {
-        total[i - 1] = tmp % 2;
-        // printf("\n%d", tmp % 2);
-        tmp = tmp / 2;
+    int valor = 128; // Empezamos con el bit más significativo (2^7)
+    for (int i = 0; i < 8; i++) { // 8 bits para 0-255
+        if (number >= valor) {
+            printf("1\t");
+            number -= valor;
+        } else {
+            printf("0\t");
+        }
+        valor /= 2; // Dividimos por 2 para el siguiente bit
     }
-
-    for (int i = 7; i >= 0; i--) {
-       printf("%d\t", total[i]);
-    }
+    // for (int i = 1; i <= 8; i++) {
+    //     total[i - 1] = tmp % 2;
+    //     // printf("\n%d", tmp % 2);
+    //     tmp = tmp / 2;
+    // }
+    //
+    // for (int i = 7; i >= 0; i--) {
+    //    printf("%d\t", total[i]);
+    // }
 
 
 
