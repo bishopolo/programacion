@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jorgeecheverry/TIE/programacion1/taller3/file2'
+relocations:     []
+...
