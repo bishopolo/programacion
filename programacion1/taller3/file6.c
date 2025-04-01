@@ -36,7 +36,7 @@ int main(void) {
 }
 
 
-
+// version que no funciona
 /*
 #include <stdio.h>
 #include <conio.h> // Incluimos conio.h para usar getche()
@@ -76,8 +76,5 @@ int main(void) {
 
     return 0;
 }
- *
- *
- *
- *
- */
+
+*/
