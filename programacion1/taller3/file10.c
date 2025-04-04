@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <unistd.h>
 
 int main() {
     int horas, minutos, segundos;
@@ -18,10 +18,8 @@ int main() {
         for (int m = 0; m <= 59; m++) {
             for (int s = 0; s <= 59; s++) {
                 printf("%02d:%02d:%02d\n", h, m, s);
-
-                if (h == horas && m == minutos && s == segundos) {
-                    return 0;
-                }
+                // sleep(1);
+                if (h == horas && m == minutos && s == segundos) return 0;
             }
         }
     }
