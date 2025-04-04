@@ -39,7 +39,7 @@ int main(void) {
 // version que no funciona
 /*
 #include <stdio.h>
-#include <conio.h> // Incluimos conio.h para usar getche()
+#include <conio.h>
 
 int main(void) {
     int mayus = 0, minus = 0, espacios = 0;
@@ -48,15 +48,15 @@ int main(void) {
     printf("Ingresa caracteres (letras o espacios). Presiona ESC para salir.\n");
 
     do {
-        letra = getche(); // Usamos getche() para leer el carácter sin Enter y con eco
+        letra = getche();
 
-        if (letra == 27) { // Verificamos si se presionó ESC antes de procesar el carácter
-            break; // Salimos del bucle si es ESC
+        if (letra == 27) {
+            break;
         }
 
         if (letra >= '0' && letra <= '9') {
             printf("\nNo puedes ingresar números. Intenta de nuevo.\n");
-            continue; // Volvemos al inicio del bucle para leer otro carácter
+            continue;
         }
 
         if (letra == ' ') {
@@ -66,8 +66,7 @@ int main(void) {
         } else if (letra >= 'a' && letra <= 'z') {
             minus++;
         }
-        // Podríamos agregar un 'else' para ignorar otros caracteres si solo nos interesan letras y espacios
-    } while (1); // El bucle continúa hasta que se presiona ESC y se ejecuta el 'break'
+    } while (1);
 
     printf("\n\nIngresaste:\n");
     printf("%d letras mayúsculas\n", mayus);
