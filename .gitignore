@@ -1,0 +1,35 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# JetBrains IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iws
+.idea_modules/
+
+# VS Code files
+.vscode/
+*.code-workspace
+.history/
+
+# Debug symbol files
+*.dSYM/
+*.dSYM/Contents/
+*.su
+*.idb
+*.pdb
+
+# Compiled files
+*.o
+*.out
+*.exe
+*.app
+*.i*86
+*.x86_64
+*.hex
+
